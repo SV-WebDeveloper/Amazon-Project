@@ -1,0 +1,244 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: rgb(19, 25, 33);
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 10px;
+}
+
+/* Left Section */
+
+.left-section {
+  width: 160px;
+  height: calc(100% - 10px);
+  border: 1px solid transparent;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amazon-logo {
+  background-image: url('../images/amazon-logo-pc.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  margin-top: 5px;
+  width: 100px;
+  height: 40px;
+}
+
+@media (max-width: 600px) {
+  .left-section {
+    width: 60px;
+  }
+  
+  .amazon-logo{
+    background-image: url('../images/amazon-logo-mobile.png');
+    width: 53px;
+    height: 34px;
+  }
+}
+
+.left-section:hover {
+  border: 1px solid white;
+}
+
+/* Middle Section */
+
+.middle-section {
+  display: flex;
+  align-items: stretch;
+  height: 60%;
+}
+
+.search-bar {
+  width: 36em;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+  padding: 10px 10px 10px 15px;
+}
+
+.search-bar::placeholder {
+  font-size: 1rem;
+}
+
+.search-bar:hover {
+  outline: 1.5px solid #FFB000;
+}
+
+.search-icon {
+  background-color: rgb(254, 189, 105);
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 2em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 750px) {
+  .search-bar {
+    width: 17em;
+    padding: 10px;
+  }
+}
+
+/* Right Section */
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.returns-orders {
+  padding: 5px;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.returns-orders .return {
+  color: #C0C0C0;
+}
+
+.returns-orders:hover {
+  border: 1px solid white;
+}
+
+/* Extreme Right Section */
+
+.extreme-right-section {
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  border: 1px solid transparent;
+  padding: 3px;
+}
+
+.cart-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cart-label span {
+  position: absolute;
+  top: -2px;
+  left: 23px;
+  
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f08804;
+}
+
+.cart:hover {
+  border: 1px solid white;
+}
+
+.cart-img {
+  background-image: url('../images/cart-icon.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  width: 3em;
+  height: 2em;
+  font-weight: 900;
+}
+
+.mobile-right-section {
+  display: none;
+}
+
+.mobile-menubar {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0px 5px;
+  }
+  
+  .right-section {
+    display: none;
+  }
+  
+  .extreme-right-section {
+    display: none;
+  }
+  
+  .mobile-right-section {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  
+  .mobile-menubar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 25, 33);
+    color: white;
+    
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    
+    font-weight: 600;
+    font-size: 1em;
+    
+    max-height: 0px; 
+    opacity: 0;
+    overflow: hidden;
+    
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .mobile-menubar a {
+    color: orange;
+  }
+  
+  .mobile-menubar div {
+    width: 100%;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 15px 0;
+  }
+  
+  .mobile-menubar div:hover {
+    background-color: #263240;
+  }
+  
+  .mobile-menubar.show-menubar {
+    max-height: 150px;
+    opacity: 1;
+  }
+}
