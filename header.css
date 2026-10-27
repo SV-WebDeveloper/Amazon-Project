@@ -27,7 +27,7 @@ header {
 }
 
 .amazon-logo {
-  background-image: url('../images/amazon-logo-pc.png');
+  background-image: url('amazon-logo-pc.png');
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ header {
   }
   
   .amazon-logo{
-    background-image: url('../images/amazon-logo-mobile.png');
+    background-image: url('amazon-logo-mobile.png');
     width: 53px;
     height: 34px;
   }
@@ -160,7 +160,7 @@ header {
 }
 
 .cart-img {
-  background-image: url('../images/cart-icon.png');
+  background-image: url('cart-icon.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
