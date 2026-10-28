@@ -255,3 +255,34 @@ header {
     opacity: 1;
   }
 }
+
+@media (min-width: 1600px) {
+  .navbar {
+    padding: 0 30px;
+    justify-content: space-between;
+    height: 80px;
+  }
+
+  .left-section {
+    width: 190px;
+  }
+
+  .amazon-logo {
+    width: 130px;
+    height: 45px;
+  }
+
+  .returns-orders {
+    font-size: 1.1rem;
+    padding: 8px;
+  }
+
+  .cart-img {
+    width: 4em;
+    height: 2.5em;
+  }
+
+  .cart-text {
+    font-size: 1.1rem;
+  }
+}
