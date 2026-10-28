@@ -62,7 +62,8 @@ header {
 }
 
 .search-bar {
-  width: 36em;
+  max-width: 49em;
+  width: auto;
   height: 100%;
   border: none;
   outline: none;
@@ -93,9 +94,14 @@ header {
   border-bottom-right-radius: 5px;
 }
 
+.search-icon a {
+  color: black;
+}
+
 @media (max-width: 750px) {
   .search-bar {
-    width: 17em;
+    max-width: 16em;
+    width: auto;
     padding: 10px;
   }
 }
