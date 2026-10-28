@@ -59,7 +59,7 @@ header {
   display: flex;
   flex: 1;
   min-width: 0;
-  width: 0;
+  max-width: 900px;
   margin: 0px 15px;
   align-items: stretch;
   height: 60%;
@@ -68,7 +68,7 @@ header {
 .search-bar {
   flex: 1;
   min-width: 0;
-  width: 0;
+  max-width: 800px;
   height: 100%;
   border: none;
   outline: none;
